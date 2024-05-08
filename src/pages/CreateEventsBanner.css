@@ -1,0 +1,134 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.back-button2,
+.save-button2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.save-button2 {
+  left: 154px;
+}
+.buttons2 {
+  position: absolute;
+  top: 863px;
+  left: 1280px;
+  width: 424px;
+  height: 54px;
+}
+.feature-image-must {
+  margin: 0;
+}
+.feature-image-must-container {
+  position: absolute;
+  top: 252px;
+  left: 48px;
+  color: var(--assignment-1-dark-grey);
+  display: inline-block;
+  width: 690px;
+}
+.banner-item {
+  position: absolute;
+  top: 150px;
+  left: 48px;
+  background-color: var(--color-gainsboro);
+  width: 576px;
+  height: 67px;
+}
+.upload-event-banner {
+  position: absolute;
+  top: 80px;
+  left: 48px;
+  font-size: var(--font-size-7xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 381px;
+  height: 35px;
+}
+.event-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-17xl);
+  font-weight: 500;
+  font-family: var(--font-outfit);
+  display: flex;
+  align-items: center;
+  width: 395.3px;
+}
+.banner1 {
+  position: absolute;
+  top: 447px;
+  left: 984px;
+  width: 738px;
+  height: 314px;
+  text-align: left;
+  font-size: var(--assignment-1-small-title-size);
+  color: var(--color-black);
+  font-family: var(--assignment-1-small-title);
+}
+.feature-image-must-container1 {
+  position: absolute;
+  top: 252px;
+  left: 48px;
+  color: var(--assignment-1-dark-grey);
+  display: inline-block;
+  width: 672px;
+}
+.flyer {
+  position: absolute;
+  top: 447px;
+  left: 216px;
+  width: 720px;
+  height: 314px;
+  text-align: left;
+  font-size: var(--assignment-1-small-title-size);
+  color: var(--color-black);
+  font-family: var(--assignment-1-small-title);
+}
+.create-event3 {
+  position: absolute;
+  top: 0;
+  left: 36.7px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 395.3px;
+}
+.topic-2-child2,
+.topic-24 {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 16.9px;
+  height: 34px;
+}
+.topic-24 {
+  top: 182px;
+  left: 120px;
+  width: 432px;
+  height: 50px;
+  text-align: left;
+  font-size: var(--tradegothic-bold-40-size);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
+}
+.create-events-banner {
+  width: 100%;
+  height: 1413px;
+  position: relative;
+  background-color: var(--neutrals);
+  overflow: hidden;
+  opacity: 0;
+}
+.create-events-banner.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}

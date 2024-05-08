@@ -1,0 +1,78 @@
+.filled-progress-icon {
+  position: absolute;
+  bottom: 43px;
+  left: calc(50% - 202.5px);
+  width: 392px;
+  height: 24px;
+}
+.edit,
+.edit1 {
+  position: absolute;
+}
+.edit1 {
+  top: 34px;
+  left: calc(50% - 22.5px);
+  font-weight: 600;
+}
+.edit {
+  top: 0;
+  left: 0;
+  width: 405px;
+  height: 67px;
+}
+.filled-progress-icon1 {
+  position: absolute;
+  bottom: 43px;
+  left: calc(50% - 202.5px);
+  width: 405.5px;
+  height: 24px;
+}
+.review1 {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 41.5px);
+  font-weight: 600;
+}
+.review {
+  position: absolute;
+  top: 0;
+  left: 1179px;
+  width: 405px;
+  height: 67px;
+}
+.ticketing1 {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 52.5px);
+  font-weight: 600;
+}
+.ticketing {
+  position: absolute;
+  top: 0;
+  left: 786px;
+  width: 405px;
+  height: 67px;
+}
+.banner3 {
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 42.5px);
+  font-weight: 600;
+}
+.banner2,
+.progress {
+  position: absolute;
+  top: 0;
+  left: 392px;
+  width: 405px;
+  height: 67px;
+}
+.progress {
+  top: 306px;
+  left: 216px;
+  width: 1584px;
+  text-align: center;
+  font-size: var(--assignment-1-small-title-size);
+  color: var(--fade-black);
+  font-family: var(--assignment-1-small-title);
+}

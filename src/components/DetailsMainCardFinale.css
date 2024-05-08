@@ -1,0 +1,397 @@
+.see-more-button2,
+.sell-icon {
+  position: absolute;
+  top: 434px;
+  left: 798px;
+}
+.sell-icon {
+  height: 13.62%;
+  width: 8.74%;
+  top: 0;
+  right: 91.26%;
+  bottom: 86.38%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.no-of-tickets2 {
+  position: absolute;
+  top: 1px;
+  left: 41px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 154px;
+  height: 30px;
+}
+.b123456,
+.div14,
+.lkr14,
+.successful,
+.t123456 {
+  position: absolute;
+  top: 1px;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  width: 139px;
+}
+.b123456,
+.lkr14,
+.successful,
+.t123456 {
+  top: 52px;
+  left: 158px;
+  width: 144px;
+  height: 30px;
+}
+.b123456,
+.lkr14,
+.successful {
+  top: 103px;
+  left: 179px;
+}
+.lkr14,
+.successful {
+  top: 154px;
+  left: 222px;
+}
+.lkr14 {
+  top: 205px;
+  left: 149px;
+}
+.no-of-tickets1,
+.sell-icon1 {
+  position: absolute;
+  height: 58.17%;
+  width: 58.37%;
+  top: 41.58%;
+  right: 41.63%;
+  bottom: 0.25%;
+  left: 0;
+}
+.sell-icon1 {
+  height: 100%;
+  width: 21.48%;
+  top: 0;
+  right: 78.52%;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.ticket-id1 {
+  position: absolute;
+  top: 1px;
+  left: 41px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 108px;
+}
+.payments-icon,
+.ticket-id {
+  position: absolute;
+  height: 7.92%;
+  width: 23.76%;
+  top: 54.21%;
+  right: 76.24%;
+  bottom: 37.87%;
+  left: 0;
+}
+.payments-icon {
+  height: 100%;
+  width: 14.95%;
+  top: 0;
+  right: 85.05%;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.amount2 {
+  position: absolute;
+  top: 1px;
+  left: 41px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 173px;
+}
+.amount1,
+.label-important-icon {
+  position: absolute;
+  height: 7.92%;
+  width: 34.13%;
+  top: 92.08%;
+  right: 65.87%;
+  bottom: 0;
+  left: 0;
+}
+.label-important-icon {
+  height: 100%;
+  width: 18.71%;
+  top: 0;
+  right: 81.29%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.booking-id1 {
+  position: absolute;
+  top: 1px;
+  left: 41px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 130px;
+}
+.booking-id,
+.booking-status {
+  position: absolute;
+  height: 7.92%;
+  width: 27.27%;
+  top: 66.83%;
+  right: 72.73%;
+  bottom: 25.25%;
+  left: 0;
+}
+.booking-status {
+  width: 34.13%;
+  top: 79.46%;
+  right: 65.87%;
+  bottom: 12.62%;
+}
+.pm3 {
+  position: absolute;
+  top: 1px;
+  left: 39px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 199px;
+  height: 30px;
+}
+.access-time-icon3 {
+  position: absolute;
+  height: 100%;
+  width: 13.45%;
+  top: 0;
+  right: 86.55%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.div15,
+.time2 {
+  position: absolute;
+}
+.time2 {
+  top: 117px;
+  left: 243px;
+  width: 238px;
+  height: 32px;
+}
+.div15 {
+  top: 2px;
+  left: 41px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 154px;
+}
+.date-range-icon3 {
+  position: absolute;
+  height: 100%;
+  width: 16.41%;
+  top: 0;
+  right: 83.59%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.date5,
+.fmd-good-icon3 {
+  position: absolute;
+  top: 117px;
+  left: 0;
+  width: 195px;
+  height: 32px;
+}
+.fmd-good-icon3 {
+  height: 86.49%;
+  width: 5.1%;
+  top: 8.11%;
+  right: 94.9%;
+  bottom: 5.41%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.viharamahadevi-open-air2 {
+  position: absolute;
+  top: 0;
+  left: 41px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 586px;
+  height: 37px;
+}
+.location2 {
+  position: absolute;
+  height: 9.16%;
+  width: 100%;
+  top: 15.1%;
+  right: 0;
+  bottom: 75.74%;
+  left: 0;
+}
+.natamu-neda2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--tradegothic-bold-40-size);
+  display: flex;
+  color: var(--color-black);
+  align-items: center;
+  width: 627px;
+  height: 50px;
+}
+.event-details6 {
+  position: absolute;
+  height: 84.17%;
+  width: 45.04%;
+  top: 2.29%;
+  right: 20.69%;
+  bottom: 13.54%;
+  left: 34.27%;
+  text-align: left;
+  font-size: var(--assignment-1-small-title-size);
+  color: var(--fade-black);
+  font-family: var(--font-outfit);
+}
+.ticket-price-details-child3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xs);
+  background-color: var(--neutrals);
+  border: 2px solid var(--color-mediumseagreen-100);
+  box-sizing: border-box;
+  width: 288px;
+  height: 247px;
+}
+.div16,
+.standing4,
+.tickets {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.tickets {
+  top: 9px;
+  left: 37px;
+  font-size: var(--assignment-1-small-title-size);
+  color: var(--color-mediumblue-100);
+  text-align: center;
+  justify-content: center;
+  width: 213px;
+  height: 43.4px;
+}
+.div16,
+.standing4 {
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  width: 96px;
+  height: 29px;
+}
+.div16 {
+  left: 168px;
+  text-align: right;
+  width: 72px;
+}
+.div17,
+.genaral4,
+.ticket-price-model-12 {
+  position: absolute;
+  top: 69px;
+  left: 24px;
+  width: 240px;
+  height: 29px;
+}
+.div17,
+.genaral4 {
+  top: 0.1px;
+  left: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 96px;
+}
+.div17 {
+  top: 0;
+  left: 168px;
+  color: var(--color-black);
+  text-align: right;
+  width: 72px;
+}
+.ticket-price-model-22,
+.ticket-price-model-32 {
+  position: absolute;
+  top: 128px;
+  left: 24px;
+  width: 240px;
+  height: 29.1px;
+}
+.ticket-price-model-32 {
+  top: 187px;
+  height: 29px;
+}
+.ticket-price-details-child4,
+.ticket-price-details-child5 {
+  position: absolute;
+  top: 112.4px;
+  left: 30px;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-1000);
+  width: 228px;
+  height: 1.2px;
+}
+.ticket-price-details-child5 {
+  top: 171.5px;
+}
+.ticket-price-details2 {
+  position: absolute;
+  top: 109px;
+  left: 1104px;
+  width: 288px;
+  height: 247px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--fade-black);
+  font-family: var(--font-outfit);
+}
+.details-main-card-child1 {
+  position: absolute;
+  top: 36px;
+  left: 429px;
+  border-radius: var(--br-29xl);
+  background-color: var(--fade-black);
+  width: 3px;
+  height: 408px;
+  opacity: 0.24;
+}
+.details-main-card2 {
+  position: absolute;
+  top: 319px;
+  left: 264px;
+  width: 1392px;
+  height: 480px;
+}
