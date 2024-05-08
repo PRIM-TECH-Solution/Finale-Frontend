@@ -17,7 +17,15 @@
   height: 32px;
   flex-shrink: 0;
   mix-blend-mode: normal;
+  text-decoration: none; /* Remove underline by default */
 }
+
+.home:hover {
+  text-decoration: underline; /* Underline text on hover */
+  cursor: pointer; /* Change cursor to hand pointer on hover */
+}
+
+
 .group-child3,
 .log-in5 {
   position: absolute;
