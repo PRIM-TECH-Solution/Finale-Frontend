@@ -213,15 +213,30 @@
   position: absolute;
   top: 148px;
   left: 0;
+  background-color: #FFA31A;
+  font-family: poppins;
+  transition: transform 0.3s ease; 
 }
+
+.subscribe-button:hover {
+  transform: scale(1.1); 
+  background-color: #FFA31A;
+}
+
 .enter-your-email {
-  border: 0;
+  border: 1px solid rgb(108, 108, 108);
+  border-radius: 4px;
   background-color: transparent;
   top: 32px;
   font-family: var(--font-outfit);
   font-size: var(--body-medium-400-size);
-  color: var(--color-slategray);
+  color: white;
 }
+
+.enter-your-email input::placeholder {
+  color: white !important; 
+}
+
 .email4,
 .enter-your-email,
 .your-email {
