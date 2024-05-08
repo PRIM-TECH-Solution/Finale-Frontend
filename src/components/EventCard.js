@@ -2,11 +2,11 @@ import { useMemo } from "react";
 import "./EventCard.css";
 
 const EventCard = ({
-  rectangle508,
-  pM,
-  prop,
-  galleSamanalaGround,
-  dampataHendewa,
+  flyer,
+  time1,
+  date1,
+  location1,
+  etitle,
   propLeft,
   propTop,
   onEventCard1ContainerClick,
@@ -24,21 +24,21 @@ const EventCard = ({
       style={eventCard8Style}
       onClick={onEventCard1ContainerClick}
     >
-      <img className="event-card8-child" alt="" src={rectangle508} />
+      <img className="event-card8-child" alt="" src={flyer} />
       <img className="event-card8-child" alt="" src="/rectangle-5081@2x.png" />
       <div className="time">
         <img className="access-time-icon1" alt="" src="/access-time.svg" />
-        <div className="pm1">{pM}</div>
+        <div className="pm1">{time1}</div>
       </div>
       <div className="date3">
         <img className="access-time-icon1" alt="" src="/date-range.svg" />
-        <div className="pm1">{prop}</div>
+        <div className="pm1">{date1}</div>
       </div>
       <div className="location1">
         <img className="fmd-good-icon1" alt="" src="/fmd-good.svg" />
-        <div className="galle-samanala-ground">{galleSamanalaGround}</div>
+        <div className="galle-samanala-ground">{location1}</div>
       </div>
-      <div className="dampata-hendewa">{dampataHendewa}</div>
+      <div className="dampata-hendewa">{etitle}</div>
     </div>
   );
 };
