@@ -144,7 +144,7 @@ const HomePage = () => {
           flyer="/rectangle-5086@2x.jpg"
           time1="08:00 PM"
           date1="04.12.2023"
-          location1="Viharamahadevi "
+          location1="Viharamahadevi Open Air Theater"
           etitle="Kolamba Sanniya"
           propLeft="864px"
           propTop="0px"
