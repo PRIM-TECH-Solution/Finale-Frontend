@@ -174,7 +174,7 @@ const Events = () => {
           flyer="/rectangle-5089@2x.jpg"
           time1="08:20 PM"
           date1="15.12.2023"
-          location1="Nuwaraeliyaa"
+          location1="Nuwaraeliyaaaa"
           etitle="Pub London"
           propLeft="1296px"
           propTop="1088px"
