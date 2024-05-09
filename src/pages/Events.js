@@ -166,12 +166,15 @@ const Events = () => {
         onAboutUsTextClick={onAboutUsTextClick}
         onGroupContainerClick={onGroupContainerClick}
       />
+
+  
+
       <main className="event-cards1">
         <EventCard
           flyer="/rectangle-5089@2x.jpg"
           time1="08:20 PM"
           date1="15.12.2023"
-          location1="Nuwaraeliya"
+          location1="Nuwaraeliyaa"
           etitle="Pub London"
           propLeft="1296px"
           propTop="1088px"
