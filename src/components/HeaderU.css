@@ -17,7 +17,16 @@
   height: 32px;
   flex-shrink: 0;
   mix-blend-mode: normal;
+  text-decoration: none;
+
 }
+
+.home:hover {
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+
 .group-child3,
 .log-in5 {
   position: absolute;
@@ -35,7 +44,11 @@
   align-items: center;
   justify-content: center;
   mix-blend-mode: normal;
-}
+
+}.log-in5:hover {
+    cursor: pointer; 
+  }
+
 .rectangle-parent4 {
   width: 96px;
   position: relative;
