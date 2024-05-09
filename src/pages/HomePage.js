@@ -106,19 +106,11 @@ const HomePage = () => {
       >
         See More
       </Button>
-      <main className="event-cards">
-      {Eventcards.map(eventCard => (
-          <EventCard key = {eventCard.id}
-            
-            flyer="/rectangle-508@2x.jpg" // Assuming flyer is a URL to the image
-            time1={eventCard.eventTime} // Assuming eventTime is in the format "07:20 PM"
-            date1={eventCard.eventDate} // Assuming eventDate is in the format "09.12.2023"
-            location1={eventCard.eventLocation} // Assuming eventLocation is a string
-            etitle={eventCard.eventName} // Assuming eventName is a string
-            onEventCard1ContainerClick={onEventCard1ContainerClick}
-          />
-        ))}
-      </main>
+      
+      
+
+
+
       <section className="topic-1">
         <img className="topic-1-child" alt="" src="/rectangle-507.svg" />
         <div className="latest-events">
