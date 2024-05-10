@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -24,6 +24,16 @@ const HomePage = () => {
   const onGroupContainerClick = useCallback(() => {
     navigate("/log-in");
   }, [navigate]);
+
+  const [Eventcards, setEventcards] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/eventcards/getAll")
+      .then((res) => res.json())
+      .then((result) => {
+        setEventcards(result);
+      });
+  }, []);
 
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -97,77 +107,17 @@ const HomePage = () => {
         See More
       </Button>
       <main className="event-cards">
-        <EventCard
-          flyer="/rectangle-508@2x.jpg"
-          time1="07:20 PM"
-          date1="09.12.2023"
-          location1="Galle Samanala Ground"
-          etitle="Dampata Hendewa"
-        />
-        <EventCard
-          flyer="/rectangle-5082@2x.jpg"
-          time1="07:40 PM"
-          date1="08.12.2023"
-          location1="University of Ruhuna"
-          etitle="Phoenix"
-          propLeft="864px"
-          propTop="540px"
-        />
-        <EventCard
-          flyer="/rectangle-5083@2x.jpg"
-          time1="07:44 PM"
-          date1="07.12.2023"
-          location1="Maharagama"
-          etitle="Kottu Beach Party"
-          propLeft="432px"
-          propTop="540px"
-        />
-        <EventCard
-          flyer="/rectangle-5084@2x.jpg"
-          time1="06:00 PM"
-          date1="06.12.2023"
-          location1="Cinnamon Lake Side"
-          etitle="Ananthaya"
-          propLeft="0px"
-          propTop="540px"
-        />
-        <EventCard
-          flyer="/rectangle-5085@2x.jpg"
-          time1="08:30 PM"
-          date1="05.12.2023"
-          location1="Tangalle"
-          etitle="Tango"
-          propLeft="1296px"
-          propTop="0px"
-        />
-        <EventCard
-          flyer="/rectangle-5086@2x.jpg"
-          time1="08:00 PM"
-          date1="04.12.2023"
-          location1="Viharamahadevi "
-          etitle="Kolamba Sanniya"
-          propLeft="864px"
-          propTop="0px"
-        />
-        <EventCard
-          flyer="/rectangle-5087@2x.jpg"
-          time1="07:30 PM"
-          date1="03.12.2023"
-          location1="The Grand Mountain Hotel - Mathale"
-          etitle="Lak Nada"
-          propLeft="432px"
-          propTop="0px"
-        />
-        <EventCard
-          flyer="/rectangle-5088@2x.jpg"
-          time1="07:00 PM"
-          date1="02.12.2023"
-          location1="Viharamahadevi Open Air Theater"
-          etitle="Natamu Neda"
-          propLeft="0px"
-          propTop="0px"
-          onEventCard1ContainerClick={onEventCard1ContainerClick}
-        />
+      {Eventcards.map(eventCard => (
+          <EventCard key = {eventCard.id}
+            
+            flyer="/rectangle-508@2x.jpg" // Assuming flyer is a URL to the image
+            time1={eventCard.eventTime} // Assuming eventTime is in the format "07:20 PM"
+            date1={eventCard.eventDate} // Assuming eventDate is in the format "09.12.2023"
+            location1={eventCard.eventLocation} // Assuming eventLocation is a string
+            etitle={eventCard.eventName} // Assuming eventName is a string
+            onEventCard1ContainerClick={onEventCard1ContainerClick}
+          />
+        ))}
       </main>
       <section className="topic-1">
         <img className="topic-1-child" alt="" src="/rectangle-507.svg" />
@@ -204,9 +154,7 @@ const HomePage = () => {
             </span>
           </p>
           <p className="smarter-experiences">
-            <span className="events">
-              <span>Easy</span>
-            </span>
+            <span className="events">Easy</span>
             <b className="ticket">Ticket</b>
             <span className="lk">.LK</span>
           </p>
