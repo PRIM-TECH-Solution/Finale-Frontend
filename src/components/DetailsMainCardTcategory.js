@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import EventCard from "./EventCard";
 import "./DetailsMainCardTcategory.css";
+import '@testing-library/jest-dom/extend-expect';
 
 const DetailsMainCardTcategory = () => {
   const navigate = useNavigate();

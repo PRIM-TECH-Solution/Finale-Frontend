@@ -133,8 +133,8 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/view-event" element={<ViewEvent />} />
       <Route path="/download-ticket" element={<DownloadTicket />} />
-      <Route path="/admin-view" element={<BookTicketsForEvent />} />
-      <Route path="/book-tickets-for-event" element={<GuidlinesPage />} />
+      <Route path="/book-tickets-for-event" element={<BookTicketsForEvent />} />
+      <Route path="/guidlines" element={<GuidlinesPage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/payment-page" element={<PaymentPage />} />
       <Route path="/payment" element={<Payment />} />

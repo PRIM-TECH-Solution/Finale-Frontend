@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useCallback, useEffect } from "react";
 import {
   Button,
@@ -19,10 +20,32 @@ import ProgressBar from "../components/ProgressBar";
 import HeaderA from "../components/HeaderA";
 import "./CreateEventsNew.css";
 
-const CreateEventsNew = () => {
+export default function AddEvent () {
+let navigate = useNavigate();
+
+  const [event, setEvent] = useState({
+    eventname: "",
+    date: "",
+    time: "",
+    venue: "",
+    category: "",
+    description: "",
+  });
+
+  const { eventname,date,time,venue,category,descriptin } = event;
+
+  const onInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await axios.post("http://localhost:8080/event", event);
+    navigate("/create-events-banner");
+  };
   const [groupDateTimePickerValue, setGroupDateTimePickerValue] =
     useState(null);
-  const navigate = useNavigate();
+  
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -317,4 +340,4 @@ const CreateEventsNew = () => {
   );
 };
 
-export default CreateEventsNew;
+

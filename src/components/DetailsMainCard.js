@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import EventCard from "./EventCard";
 import "./DetailsMainCard.css";
+import '@testing-library/jest-dom/extend-expect';
 
 const DetailsMainCard = () => {
   const navigate = useNavigate();

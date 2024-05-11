@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useCallback, useEffect } from "react";
 import {
   TextField,
@@ -13,9 +14,32 @@ import Footer from "../components/Footer";
 import HeaderU from "../components/HeaderU";
 import "./SignUp.css";
 
-const SignUp = () => {
+export default function AddUser () {
+
+  let navigate = useNavigate();
+
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+    nic: "",
+    mobileNo: "",
+  });
+
+  const { name,email,password,nic,mobileNo } = user;
+
+  const onInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await axios.post("http://localhost:8080/auth/addUser", user);
+    navigate("/log-in");
+  };
+
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate();
+  
   const handleShowPasswordClick = () => {
     setShowPassword(!showPassword);
   };
@@ -88,13 +112,11 @@ const SignUp = () => {
               log in instead
             </div>
           </div>
+          <form onSubmit={(e) => onSubmit(e)}>
           <div className="password">
             <div className="label-parent3">
               <div className="label5">First name</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -103,16 +125,17 @@ const SignUp = () => {
               required={true}
               variant="outlined"
               sx={{ "& .MuiInputBase-root": { height: "56px" } }}
+              placeholder="Enter name"
+              name="name"
+              value={name}
+              onChange={(e) => onInputChange(e)}
             />
-            <div className="error-message5">Error message</div>
+            
           </div>
-          <div className="password">
+          {/* <div className="password">
             <div className="label-parent3">
               <div className="label5">Last name</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -123,14 +146,11 @@ const SignUp = () => {
               sx={{ "& .MuiInputBase-root": { height: "56px" } }}
             />
             <div className="error-message5">Error message</div>
-          </div>
+          </div> */}
           <div className="password">
             <div className="label-parent3">
               <div className="label5">Email</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -140,16 +160,17 @@ const SignUp = () => {
               variant="outlined"
               type="email"
               sx={{ "& .MuiInputBase-root": { height: "56px" } }}
+              placeholder="Enter email"
+                name="email"
+                value={email}
+                onChange={(e) => onInputChange(e)}
             />
-            <div className="error-message5">Error message</div>
+           
           </div>
           <div className="password">
             <div className="label-parent3">
               <div className="label5">Mobile Number</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -159,16 +180,17 @@ const SignUp = () => {
               variant="outlined"
               type="tel"
               sx={{ "& .MuiInputBase-root": { height: "56px" } }}
+              placeholder="Enter mobile No"
+                name="mobileNo"
+                value={mobileNo}
+                onChange={(e) => onInputChange(e)}
             />
-            <div className="error-message5">Error message</div>
+            
           </div>
           <div className="password">
             <div className="label-parent3">
               <div className="label5">NIC | Passport Number</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -177,16 +199,17 @@ const SignUp = () => {
               required={true}
               variant="outlined"
               sx={{ "& .MuiInputBase-root": { height: "56px" } }}
+              placeholder="Enter NIc or Passport Number"
+                name="nic"
+                value={nic}
+                onChange={(e) => onInputChange(e)}
             />
-            <div className="error-message5">Error message</div>
+            
           </div>
           <div className="password">
             <div className="label-parent3">
               <div className="label5">Password</div>
-              <div className="password-hide-see5">
-                <img className="icon5" alt="" src="/icon.svg" />
-                <div className="hide5">Hide</div>
-              </div>
+              
             </div>
             <TextField
               className="text-field15"
@@ -240,11 +263,13 @@ const SignUp = () => {
             disableElevation={true}
             color="primary"
             size="large"
+            type="submit"
             variant="contained"
             sx={{ borderRadius: "0px 0px 0px 0px", width: 534, height: 64 }}
           >
             Create an account
           </Button>
+          </form>
           <div className="divider">
             <div className="divider1" />
             <div className="i-want-to-container">OR</div>
@@ -301,6 +326,6 @@ const SignUp = () => {
       />
     </div>
   );
-};
+}
 
-export default SignUp;
+

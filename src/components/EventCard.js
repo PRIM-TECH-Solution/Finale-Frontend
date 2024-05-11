@@ -1,5 +1,7 @@
 import { useMemo } from "react";
 import "./EventCard.css";
+import '@testing-library/jest-dom/extend-expect';
+
 
 const EventCard = ({
   flyer,
@@ -24,9 +26,9 @@ const EventCard = ({
       style={eventCard8Style}
       onClick={onEventCard1ContainerClick}
     >
-      <img className="event-card8-child" alt="" src={flyer} />
-      <img className="event-card8-child" alt="" src="/rectangle-5081@2x.png" />
-      <div className="time">
+      <img className="event-card8-child" alt="Event Flyer" src={flyer} />
+
+       <div className="time">
         <img className="access-time-icon1" alt="" src="/access-time.svg" />
         <div className="pm1">{time1}</div>
       </div>
