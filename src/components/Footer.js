@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@mui/material";
 import "./Footer.css";
+import '@testing-library/jest-dom/extend-expect';
 
 const Footer = ({ communicationCall, details1Top }) => {
   const footerStyle = useMemo(() => {
