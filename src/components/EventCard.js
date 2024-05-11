@@ -7,11 +7,21 @@ const EventCard = ({
   date1,
   location1,
   etitle,
+  propLeft,
+  propTop,
   onEventCard1ContainerClick,
 }) => {
+  const eventCard8Style = useMemo(() => {
+    return {
+      left: propLeft,
+      top: propTop,
+    };
+  }, [propLeft, propTop]);
+
   return (
     <div
       className="event-card8"
+      style={eventCard8Style}
       onClick={onEventCard1ContainerClick}
     >
       <img className="event-card8-child" alt="" src={flyer} />
