@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import "./CategoryCard.css";
+import '@testing-library/jest-dom/extend-expect';
 
 const CategoryCard = ({ rectangle1426, mUSIC, propLeft }) => {
   const cardStyle = useMemo(() => {
