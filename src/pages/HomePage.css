@@ -73,6 +73,18 @@
   left: 840px;
   cursor: pointer;
 }
+
+/* src/pages/HomePage.css */
+.events-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
 .event-cards {
   position: absolute;
   top: 1077px;

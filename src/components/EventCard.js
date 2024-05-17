@@ -1,45 +1,35 @@
-import { useMemo } from "react";
-import "./EventCard.css";
+// src/components/EventCard.jsx
+import React from 'react';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
+import './EventCard.css';
 
-const EventCard = ({
-  flyer,
-  time1,
-  date1,
-  location1,
-  etitle,
-  propLeft,
-  propTop,
-  onEventCard1ContainerClick,
-}) => {
-  const eventCard8Style = useMemo(() => {
-    return {
-      left: propLeft,
-      top: propTop,
-    };
-  }, [propLeft, propTop]);
-
+const EventCard = ({ event }) => {
   return (
-    <div
-      className="event-card8"
-      style={eventCard8Style}
-      onClick={onEventCard1ContainerClick}
-    >
-      <img className="event-card8-child" alt="" src={flyer} />
-      <img className="event-card8-child" alt="" src="/rectangle-5081@2x.png" />
-      <div className="time">
-        <img className="access-time-icon1" alt="" src="/access-time.svg" />
-        <div className="pm1">{time1}</div>
-      </div>
-      <div className="date3">
-        <img className="access-time-icon1" alt="" src="/date-range.svg" />
-        <div className="pm1">{date1}</div>
-      </div>
-      <div className="location1">
-        <img className="fmd-good-icon1" alt="" src="/fmd-good.svg" />
-        <div className="galle-samanala-ground">{location1}</div>
-      </div>
-      <div className="dampata-hendewa">{etitle}</div>
-    </div>
+    <Card sx={{ minHeight: '280px', width: 320 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={event.imageUrl}
+        alt={event.title}
+      />
+      <CardContent sx={{ justifyContent: 'flex-end' }}>
+        <Typography variant="h6" component="div">
+          {event.title}
+        </Typography>
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{ display: 'flex', alignItems: 'center' }}
+        >
+          <LocationOnRoundedIcon sx={{ mr: 1 }} />
+          {event.location}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 };
 
