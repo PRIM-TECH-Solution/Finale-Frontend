@@ -1,11 +1,10 @@
-// src/pages/HomePage.js
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Footer from "../components/Footer";
-import EventCard from "../components/EventCard";
 import HeaderU from "../components/HeaderU";
+import EventCard from '../components/EventCard'
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -14,11 +13,9 @@ const HomePage = () => {
 
   const fetchEvents = async () => {
     try {
-      console.log("aaa");
       const response = await axios.get("http://localhost:8080/eventcards/getAll");
       setEvents(response.data);
-      console.log(response.data);
-      console.log(events)
+      console.log("Fetched events:", response.data);
     } catch (error) {
       console.error("Error fetching events:", error);
     }
@@ -41,16 +38,12 @@ const HomePage = () => {
       { threshold: 0.15 }
     );
 
-    for (let i = 0; i < scrollAnimElements.length; i++) {
-      observer.observe(scrollAnimElements[i]);
-    }
+    scrollAnimElements.forEach(element => observer.observe(element));
 
     return () => {
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.unobserve(scrollAnimElements[i]);
-      }
+      scrollAnimElements.forEach(element => observer.unobserve(element));
     };
-  }, []);
+  }, []); // Empty dependency array to run only once
 
   useEffect(() => {
     console.log("Events state updated:", events);
@@ -73,6 +66,18 @@ const HomePage = () => {
   }, [navigate]);
 
   return (
+//   <div>
+// <section >
+//         {events.length > 0 ? (
+//           events.map(event => (
+//             // 
+//             <EventCard key={event.id} event={event} />
+//           ))
+//         ) : (
+//           <p>No events available</p>
+//         )}
+//       </section>
+//   </div>
     <div className="home-page" data-animate-on-scroll>
       <Footer communicationCall="/communication--call@2x.png" />
       <section className="smart-tickets-smarter-experie-parent">
@@ -105,11 +110,7 @@ const HomePage = () => {
         See More
       </Button>
 
-      <section className="events-section">
-        {events.map(event => (
-          <EventCard key={event.id} event={event} />
-        ))}
-      </section>
+      
 
       <section className="topic-1">
         <img className="topic-1-child" alt="" src="/rectangle-507.svg" />
@@ -119,6 +120,7 @@ const HomePage = () => {
             <span className="events"> Events</span>
           </span>
         </div>
+        
       </section>
       <main className="banner">
         <img className="banner-child" loading="eager" alt="" src="/Banner@2x.jpg" />
@@ -178,6 +180,19 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <div className="eve">
+        <section >
+                  {events.length > 0 ? (
+          events.map(event => (
+            // 
+            <EventCard key={event.id} event={event} />
+          ))
+        ) : (
+          <p>No events available</p>
+        )}
+      </section>
+        </div>
       <HeaderU
         header2Position="absolute"
         header2Top="0px"

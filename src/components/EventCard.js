@@ -14,11 +14,11 @@ const EventCard = ({ event }) => {
         component="img"
         height="140"
         image={event.imageUrl}
-        alt={event.title}
+        alt={event.eventName}
       />
       <CardContent sx={{ justifyContent: 'flex-end' }}>
         <Typography variant="h6" component="div">
-          {event.title}
+          {event.eventName}
         </Typography>
         <Typography
           variant="body2"
@@ -26,7 +26,7 @@ const EventCard = ({ event }) => {
           sx={{ display: 'flex', alignItems: 'center' }}
         >
           <LocationOnRoundedIcon sx={{ mr: 1 }} />
-          {event.location}
+          {event.eventDate}
         </Typography>
       </CardContent>
     </Card>
